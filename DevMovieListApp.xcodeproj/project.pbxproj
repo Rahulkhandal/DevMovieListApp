@@ -16,6 +16,10 @@
 		B7FC79082C1758A10056BB33 /* DevMovieListAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FC79072C1758A10056BB33 /* DevMovieListAppTests.swift */; };
 		B7FC79122C1758A10056BB33 /* DevMovieListAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FC79112C1758A10056BB33 /* DevMovieListAppUITests.swift */; };
 		B7FC79142C1758A10056BB33 /* DevMovieListAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FC79132C1758A10056BB33 /* DevMovieListAppUITestsLaunchTests.swift */; };
+		B7FC794E2C18AFEF0056BB33 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FC794D2C18AFEF0056BB33 /* Scene.swift */; };
+		B7FC79502C18B0260056BB33 /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FC794F2C18B0260056BB33 /* UIViewController+Storyboard.swift */; };
+		B7FC79522C18B0460056BB33 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FC79512C18B0460056BB33 /* Router.swift */; };
+		B7FC79542C18B07D0056BB33 /* SceneFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FC79532C18B07D0056BB33 /* SceneFactoryProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		B7FC790D2C1758A10056BB33 /* DevMovieListAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DevMovieListAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FC79112C1758A10056BB33 /* DevMovieListAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevMovieListAppUITests.swift; sourceTree = "<group>"; };
 		B7FC79132C1758A10056BB33 /* DevMovieListAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevMovieListAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B7FC794D2C18AFEF0056BB33 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		B7FC794F2C18B0260056BB33 /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
+		B7FC79512C18B0460056BB33 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B7FC79532C18B07D0056BB33 /* SceneFactoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactoryProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		B7FC78EF2C17589F0056BB33 /* DevMovieListApp */ = {
 			isa = PBXGroup;
 			children = (
+				B7FC794C2C18AFD20056BB33 /* BaseSceneArchitecture */,
 				B7FC78F02C17589F0056BB33 /* AppDelegate.swift */,
 				B7FC78F22C17589F0056BB33 /* SceneDelegate.swift */,
 				B7FC78F42C17589F0056BB33 /* ViewController.swift */,
@@ -125,6 +134,17 @@
 				B7FC79132C1758A10056BB33 /* DevMovieListAppUITestsLaunchTests.swift */,
 			);
 			path = DevMovieListAppUITests;
+			sourceTree = "<group>";
+		};
+		B7FC794C2C18AFD20056BB33 /* BaseSceneArchitecture */ = {
+			isa = PBXGroup;
+			children = (
+				B7FC794D2C18AFEF0056BB33 /* Scene.swift */,
+				B7FC794F2C18B0260056BB33 /* UIViewController+Storyboard.swift */,
+				B7FC79512C18B0460056BB33 /* Router.swift */,
+				B7FC79532C18B07D0056BB33 /* SceneFactoryProtocol.swift */,
+			);
+			path = BaseSceneArchitecture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +278,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7FC794E2C18AFEF0056BB33 /* Scene.swift in Sources */,
 				B7FC78F52C17589F0056BB33 /* ViewController.swift in Sources */,
 				B7FC78F12C17589F0056BB33 /* AppDelegate.swift in Sources */,
+				B7FC79502C18B0260056BB33 /* UIViewController+Storyboard.swift in Sources */,
+				B7FC79542C18B07D0056BB33 /* SceneFactoryProtocol.swift in Sources */,
+				B7FC79522C18B0460056BB33 /* Router.swift in Sources */,
 				B7FC78F32C17589F0056BB33 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
