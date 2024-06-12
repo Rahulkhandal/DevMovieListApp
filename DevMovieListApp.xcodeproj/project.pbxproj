@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B73213D32C18D1E6005BC8D3 /* MovieListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73213D22C18D1E6005BC8D3 /* MovieListService.swift */; };
+		B74994662C19D51000048C53 /* DevNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = B74994652C19D51000048C53 /* DevNetworking */; };
 		B7FC78F12C17589F0056BB33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FC78F02C17589F0056BB33 /* AppDelegate.swift */; };
 		B7FC78F32C17589F0056BB33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FC78F22C17589F0056BB33 /* SceneDelegate.swift */; };
 		B7FC78F52C17589F0056BB33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FC78F42C17589F0056BB33 /* ViewController.swift */; };
@@ -40,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B73213D22C18D1E6005BC8D3 /* MovieListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListService.swift; sourceTree = "<group>"; };
 		B7FC78ED2C17589F0056BB33 /* DevMovieListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevMovieListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FC78F02C17589F0056BB33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7FC78F22C17589F0056BB33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B74994662C19D51000048C53 /* DevNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B73213D12C18CAF1005BC8D3 /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				B73213D22C18D1E6005BC8D3 /* MovieListService.swift */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
 		B7FC78E42C17589F0056BB33 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +119,7 @@
 		B7FC78EF2C17589F0056BB33 /* DevMovieListApp */ = {
 			isa = PBXGroup;
 			children = (
+				B73213D12C18CAF1005BC8D3 /* NetworkServices */,
 				B7FC794C2C18AFD20056BB33 /* BaseSceneArchitecture */,
 				B7FC78F02C17589F0056BB33 /* AppDelegate.swift */,
 				B7FC78F22C17589F0056BB33 /* SceneDelegate.swift */,
@@ -163,6 +176,9 @@
 			dependencies = (
 			);
 			name = DevMovieListApp;
+			packageProductDependencies = (
+				B74994652C19D51000048C53 /* DevNetworking */,
+			);
 			productName = DevMovieListApp;
 			productReference = B7FC78ED2C17589F0056BB33 /* DevMovieListApp.app */;
 			productType = "com.apple.product-type.application";
@@ -235,6 +251,9 @@
 				Base,
 			);
 			mainGroup = B7FC78E42C17589F0056BB33;
+			packageReferences = (
+				B74994642C19D51000048C53 /* XCRemoteSwiftPackageReference "DevNetworking" */,
+			);
 			productRefGroup = B7FC78EE2C17589F0056BB33 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -284,6 +303,7 @@
 				B7FC79502C18B0260056BB33 /* UIViewController+Storyboard.swift in Sources */,
 				B7FC79542C18B07D0056BB33 /* SceneFactoryProtocol.swift in Sources */,
 				B7FC79522C18B0460056BB33 /* Router.swift in Sources */,
+				B73213D32C18D1E6005BC8D3 /* MovieListService.swift in Sources */,
 				B7FC78F32C17589F0056BB33 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +486,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KS85QF946Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DevMovieListApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -493,6 +514,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KS85QF946Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DevMovieListApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -625,6 +647,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B74994642C19D51000048C53 /* XCRemoteSwiftPackageReference "DevNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Rahulkhandal/DevNetworking/";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B74994652C19D51000048C53 /* DevNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B74994642C19D51000048C53 /* XCRemoteSwiftPackageReference "DevNetworking" */;
+			productName = DevNetworking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B7FC78E52C17589F0056BB33 /* Project object */;
 }
