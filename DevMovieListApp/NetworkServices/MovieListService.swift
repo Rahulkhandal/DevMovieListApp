@@ -8,15 +8,36 @@
 import Foundation
 import DevNetworking
 //https://api.themoviedb.org/3/movie/now_playing
+//     --url 'https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1' \
 
 protocol FetchLatestMovieListProtocol {
-    
+    func fetchLatestMovieList(page: Int,
+                              completion: @escaping FetchLatestMovieListProtocolUseCaseCompletionHandler)
 }
+
+typealias FetchLatestMovieListProtocolUseCaseCompletionHandler = (Result<MovieResult, Error>) -> Void
 
 
 final class MovieListService: FetchLatestMovieListProtocol {
+   
+    private let apiClient: NetworkModule
+
     
     init(networkModule: NetworkModule) {
-        
+        self.apiClient = networkModule
+    }
+    
+    func fetchLatestMovieList(page: Int,
+                              completion: @escaping FetchLatestMovieListProtocolUseCaseCompletionHandler) {
+        let request = FetchLatestMovieListRequest(page: page)
+        apiClient.performAndDecode(request: request,
+                          responseType: MovieResult.self) { result in
+            switch result {
+            case let .success(movieResult):
+                completion(.success(movieResult))
+            case let .failure(error):
+                completion(.failure(error))
+            }
+        }
     }
 }
