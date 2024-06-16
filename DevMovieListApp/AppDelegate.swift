@@ -6,11 +6,28 @@
 //
 
 import UIKit
+import DevNetworking
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    private(set) lazy var sceneFactory: SceneFactoryProtocol = {
+        let factory = SceneFactory(movieListService: movieService)
+        return factory
+    }()
 
-
+    private let defaultNetworkModule: DefaultNetworkModule = {
+        let baseURLString = Bundle.main.infoDictionary?["BASE_URL"] as! String
+        let baseURL = URL(string: baseURLString)!
+        let authorizationAction: AddAuthenticationTokenNetworkModuleAction =
+        AddAuthenticationTokenNetworkModuleAction(authenticationTokenProvider: Bundle.main.infoDictionary?["AUTHORIZATION_HEADER"] as! String,
+                                                  authenticationTokenHeaderFieldName: "Authorization")
+        let requestBuilder = DefaultRequestBuilder(baseURL: baseURL)
+        let networkModule = DefaultNetworkModule(requestBuilder: requestBuilder, actions: [authorizationAction])
+        return networkModule
+    }()
+    
+    private lazy var movieService = MovieListService(networkModule: defaultNetworkModule)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

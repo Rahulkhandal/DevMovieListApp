@@ -1,0 +1,12 @@
+//
+//  Config_Prod.xcconfig
+//  DevMovieListApp
+//
+//  Created by Rahul on 16/06/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BASE_URL = https:/$()/api.themoviedb.org
+AUTHORIZATION_HEADER = Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmZjhmNDE0Mzc1Y2YxZjQ0MTg5MDViYTdkYzcxY2FjYiIsInN1YiI6IjY2NmYxYWUzNjQ4MmMwYzgzNjkzMGI4MCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KanXemiA1Ga89xH4bSUH1tTS70tWoLLHdcSrnVdvtJU

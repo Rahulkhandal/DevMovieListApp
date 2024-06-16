@@ -35,8 +35,16 @@ extension Scene where ViewControllerType: StoryboardController {
         }
     }
 
+    /*
+     Unhide this if we use storyboard to create view controller
     /// Default implementation of createViewController
     func createViewController() -> ViewControllerType {
         return self.createViewControllerFromStoryboard(bundle: nil)
+    }
+     */
+    
+    /// Default implementation of createViewController
+    func createViewController() -> ViewControllerType {
+        return ViewControllerType(nibName:nil, bundle:nil)
     }
 }
