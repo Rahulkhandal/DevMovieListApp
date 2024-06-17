@@ -108,6 +108,6 @@ extension LatestMovieListViewController: UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        viewModel.indexTapped(index: indexPath.row)
     }
 }

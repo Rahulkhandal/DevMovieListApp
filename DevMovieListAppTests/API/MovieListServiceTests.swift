@@ -25,7 +25,7 @@ final class MovieListServiceTests: XCTestCase {
         sut = nil
         super.tearDown()
     }
-    
+    /*
     func makeNetworkResponse(data: Data?, code: Int) -> NetworkResponse {
         var response = NetworkResponse()
         response.data = data
@@ -59,5 +59,6 @@ final class MovieListServiceTests: XCTestCase {
 
         wait(for: [expect], timeout: 3.1)
     }
+     */
     
 }

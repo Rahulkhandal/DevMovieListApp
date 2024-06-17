@@ -17,6 +17,7 @@ enum ViewState {
 
 protocol LatestMovieListViewModelProtocol: AnyObject {
     func fetchNextSetOfData()
+    func indexTapped(index: Int)
     var datasource: [Movie] { get }
     var needsPrefetch: Bool { get }
     
@@ -100,6 +101,10 @@ final class LatestMovieListViewModel: LatestMovieListViewModelProtocol {
    private func reset() {
         datasource.removeAll()
         page = 1        
+    }
+    
+    func indexTapped(index: Int) {
+        router.navigateToDetail(movieId: String(datasource[index].id))
     }
     
 }

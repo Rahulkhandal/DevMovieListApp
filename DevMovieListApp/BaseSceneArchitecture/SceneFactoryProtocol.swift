@@ -14,14 +14,17 @@ protocol SceneFactoryProtocol {
 
 struct SceneFactoryContext {
     let movieListService: FetchLatestMovieListProtocol
+    let movieDetailService: FetchMovieDetailProtocol
 }
 
 final class SceneFactory: SceneFactoryProtocol {
 
     let context: SceneFactoryContext
 
-    init(movieListService: FetchLatestMovieListProtocol) {
-        self.context = SceneFactoryContext(movieListService: movieListService)
+    init(movieListService: FetchLatestMovieListProtocol,
+         movieDetailService: FetchMovieDetailProtocol) {
+        self.context = SceneFactoryContext(movieListService: movieListService, 
+                                           movieDetailService: movieDetailService)
     }
 
     /// Takes a Scene instance, creates it's view controller and then calls configure with the model objects (in the Context).

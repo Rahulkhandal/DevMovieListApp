@@ -12,7 +12,8 @@ import DevNetworking
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private(set) lazy var sceneFactory: SceneFactoryProtocol = {
-        let factory = SceneFactory(movieListService: movieService)
+        let factory = SceneFactory(movieListService: movieService, 
+                                   movieDetailService: movieDetailService)
         return factory
     }()
 
@@ -28,6 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
     
     private lazy var movieService = MovieListService(networkModule: defaultNetworkModule)
+    private lazy var movieDetailService = MovieDetailService(networkModule: defaultNetworkModule)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
