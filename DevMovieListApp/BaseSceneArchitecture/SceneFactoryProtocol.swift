@@ -13,14 +13,14 @@ protocol SceneFactoryProtocol {
 }
 
 struct SceneFactoryContext {
-    let movieListService: MovieListService
+    let movieListService: FetchLatestMovieListProtocol
 }
 
 final class SceneFactory: SceneFactoryProtocol {
 
     let context: SceneFactoryContext
 
-    init(movieListService: MovieListService) {
+    init(movieListService: FetchLatestMovieListProtocol) {
         self.context = SceneFactoryContext(movieListService: movieListService)
     }
 

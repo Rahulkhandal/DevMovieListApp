@@ -23,6 +23,16 @@
 		B7BEBCF02C1F66D60004A4A5 /* Paginable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BEBCEF2C1F66D60004A4A5 /* Paginable.swift */; };
 		B7BEBCF22C1F67110004A4A5 /* MovieListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BEBCF12C1F67110004A4A5 /* MovieListResult.swift */; };
 		B7BEBCF42C1F67420004A4A5 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BEBCF32C1F67420004A4A5 /* Movie.swift */; };
+		B7BEBCF72C2093E90004A4A5 /* MovieListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BEBCF62C2093E90004A4A5 /* MovieListTableViewCell.swift */; };
+		B7BEBCF92C2094500004A4A5 /* MovieInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BEBCF82C2094500004A4A5 /* MovieInfoView.swift */; };
+		B7BEBCFC2C2096030004A4A5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B7BEBCFB2C2096030004A4A5 /* Kingfisher */; };
+		B7BEBCFE2C20A4D90004A4A5 /* MovieInfoColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BEBCFD2C20A4D90004A4A5 /* MovieInfoColumnView.swift */; };
+		B7BEBD012C20A9990004A4A5 /* TableViewDataSourcePrefetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BEBD002C20A9990004A4A5 /* TableViewDataSourcePrefetching.swift */; };
+		B7BEBD042C20B9480004A4A5 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BEBD032C20B9480004A4A5 /* RouterTests.swift */; };
+		B7BEBD062C20B9650004A4A5 /* SceneFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BEBD052C20B9650004A4A5 /* SceneFactoryTests.swift */; };
+		B7BEBD092C20B9B50004A4A5 /* MockMovieListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BEBD082C20B9B50004A4A5 /* MockMovieListService.swift */; };
+		B7BEBD102C20BCE40004A4A5 /* MovieListServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BEBD0F2C20BCE40004A4A5 /* MovieListServiceTests.swift */; };
+		B7BEBD122C20BD2E0004A4A5 /* MockNetworkModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BEBD112C20BD2E0004A4A5 /* MockNetworkModule.swift */; };
 		B7FC78F12C17589F0056BB33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FC78F02C17589F0056BB33 /* AppDelegate.swift */; };
 		B7FC78F32C17589F0056BB33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FC78F22C17589F0056BB33 /* SceneDelegate.swift */; };
 		B7FC78F52C17589F0056BB33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FC78F42C17589F0056BB33 /* ViewController.swift */; };
@@ -73,6 +83,15 @@
 		B7BEBCEF2C1F66D60004A4A5 /* Paginable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paginable.swift; sourceTree = "<group>"; };
 		B7BEBCF12C1F67110004A4A5 /* MovieListResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListResult.swift; sourceTree = "<group>"; };
 		B7BEBCF32C1F67420004A4A5 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		B7BEBCF62C2093E90004A4A5 /* MovieListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewCell.swift; sourceTree = "<group>"; };
+		B7BEBCF82C2094500004A4A5 /* MovieInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoView.swift; sourceTree = "<group>"; };
+		B7BEBCFD2C20A4D90004A4A5 /* MovieInfoColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoColumnView.swift; sourceTree = "<group>"; };
+		B7BEBD002C20A9990004A4A5 /* TableViewDataSourcePrefetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSourcePrefetching.swift; sourceTree = "<group>"; };
+		B7BEBD032C20B9480004A4A5 /* RouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTests.swift; sourceTree = "<group>"; };
+		B7BEBD052C20B9650004A4A5 /* SceneFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFactoryTests.swift; sourceTree = "<group>"; };
+		B7BEBD082C20B9B50004A4A5 /* MockMovieListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMovieListService.swift; sourceTree = "<group>"; };
+		B7BEBD0F2C20BCE40004A4A5 /* MovieListServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListServiceTests.swift; sourceTree = "<group>"; };
+		B7BEBD112C20BD2E0004A4A5 /* MockNetworkModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkModule.swift; sourceTree = "<group>"; };
 		B7FC78ED2C17589F0056BB33 /* DevMovieListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevMovieListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FC78F02C17589F0056BB33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7FC78F22C17589F0056BB33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7BEBCFC2C2096030004A4A5 /* Kingfisher in Frameworks */,
 				B74994662C19D51000048C53 /* DevNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +195,7 @@
 		B7BEBCE12C1F3C4C0004A4A5 /* LatestMovieListScene */ = {
 			isa = PBXGroup;
 			children = (
+				B7BEBCF52C2092AB0004A4A5 /* View */,
 				B7BEBCE32C1F3C8D0004A4A5 /* LatestMovieListScene.swift */,
 				B7BEBCE52C1F3CAE0004A4A5 /* LatestMovieListRouter.swift */,
 				B7BEBCE72C1F3CB80004A4A5 /* LatestMovieListViewModel.swift */,
@@ -209,6 +230,50 @@
 			path = NetworkResponse;
 			sourceTree = "<group>";
 		};
+		B7BEBCF52C2092AB0004A4A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7BEBCF62C2093E90004A4A5 /* MovieListTableViewCell.swift */,
+				B7BEBCF82C2094500004A4A5 /* MovieInfoView.swift */,
+				B7BEBCFD2C20A4D90004A4A5 /* MovieInfoColumnView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7BEBCFF2C20A9890004A4A5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B7BEBD002C20A9990004A4A5 /* TableViewDataSourcePrefetching.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B7BEBD022C20B9330004A4A5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B7BEBD032C20B9480004A4A5 /* RouterTests.swift */,
+				B7BEBD052C20B9650004A4A5 /* SceneFactoryTests.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B7BEBD072C20B9910004A4A5 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B7BEBD082C20B9B50004A4A5 /* MockMovieListService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B7BEBD0E2C20BCC80004A4A5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B7BEBD0F2C20BCE40004A4A5 /* MovieListServiceTests.swift */,
+				B7BEBD112C20BD2E0004A4A5 /* MockNetworkModule.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		B7FC78E42C17589F0056BB33 = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +297,7 @@
 		B7FC78EF2C17589F0056BB33 /* DevMovieListApp */ = {
 			isa = PBXGroup;
 			children = (
+				B7BEBCFF2C20A9890004A4A5 /* Utils */,
 				B7BEBCEE2C1F62330004A4A5 /* NetworkResponse */,
 				B7BEBCEB2C1F5C0B0004A4A5 /* XCConfigs */,
 				B7BEBCDE2C1F2C0F0004A4A5 /* Theme */,
@@ -253,6 +319,9 @@
 		B7FC79062C1758A10056BB33 /* DevMovieListAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				B7BEBD0E2C20BCC80004A4A5 /* API */,
+				B7BEBD072C20B9910004A4A5 /* Mocks */,
+				B7BEBD022C20B9330004A4A5 /* Scenes */,
 				B7FC79072C1758A10056BB33 /* DevMovieListAppTests.swift */,
 			);
 			path = DevMovieListAppTests;
@@ -296,6 +365,7 @@
 			name = DevMovieListApp;
 			packageProductDependencies = (
 				B74994652C19D51000048C53 /* DevNetworking */,
+				B7BEBCFB2C2096030004A4A5 /* Kingfisher */,
 			);
 			productName = DevMovieListApp;
 			productReference = B7FC78ED2C17589F0056BB33 /* DevMovieListApp.app */;
@@ -371,6 +441,7 @@
 			mainGroup = B7FC78E42C17589F0056BB33;
 			packageReferences = (
 				B74994642C19D51000048C53 /* XCRemoteSwiftPackageReference "DevNetworking" */,
+				B7BEBCFA2C2096030004A4A5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = B7FC78EE2C17589F0056BB33 /* Products */;
 			projectDirPath = "";
@@ -420,10 +491,12 @@
 				B7BEBCCE2C1CA8A80004A4A5 /* FetchLatestMovieListRequest.swift in Sources */,
 				B7FC78F12C17589F0056BB33 /* AppDelegate.swift in Sources */,
 				B7BEBCE82C1F3CB80004A4A5 /* LatestMovieListViewModel.swift in Sources */,
+				B7BEBCFE2C20A4D90004A4A5 /* MovieInfoColumnView.swift in Sources */,
 				B7BEBCD72C1DE9880004A4A5 /* DashboardViewModel.swift in Sources */,
 				B7BEBCD42C1DE9730004A4A5 /* DashboardRouter.swift in Sources */,
 				B7FC79502C18B0260056BB33 /* UIViewController+Storyboard.swift in Sources */,
 				B7BEBCF22C1F67110004A4A5 /* MovieListResult.swift in Sources */,
+				B7BEBD012C20A9990004A4A5 /* TableViewDataSourcePrefetching.swift in Sources */,
 				B7BEBCDB2C1F294C0004A4A5 /* DashboardViewController.swift in Sources */,
 				B7BEBCF02C1F66D60004A4A5 /* Paginable.swift in Sources */,
 				B7FC79542C18B07D0056BB33 /* SceneFactoryProtocol.swift in Sources */,
@@ -436,7 +509,9 @@
 				B7BEBCDD2C1F2A710004A4A5 /* MoviesTabController.swift in Sources */,
 				B7FC78F32C17589F0056BB33 /* SceneDelegate.swift in Sources */,
 				B7BEBCF42C1F67420004A4A5 /* Movie.swift in Sources */,
+				B7BEBCF92C2094500004A4A5 /* MovieInfoView.swift in Sources */,
 				B7BEBCEA2C1F3CC40004A4A5 /* LatestMovieListViewController.swift in Sources */,
+				B7BEBCF72C2093E90004A4A5 /* MovieListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +519,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7BEBD092C20B9B50004A4A5 /* MockMovieListService.swift in Sources */,
+				B7BEBD102C20BCE40004A4A5 /* MovieListServiceTests.swift in Sources */,
+				B7BEBD042C20B9480004A4A5 /* RouterTests.swift in Sources */,
+				B7BEBD062C20B9650004A4A5 /* SceneFactoryTests.swift in Sources */,
+				B7BEBD122C20BD2E0004A4A5 /* MockNetworkModule.swift in Sources */,
 				B7FC79082C1758A10056BB33 /* DevMovieListAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -797,6 +877,14 @@
 				kind = branch;
 			};
 		};
+		B7BEBCFA2C2096030004A4A5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -804,6 +892,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B74994642C19D51000048C53 /* XCRemoteSwiftPackageReference "DevNetworking" */;
 			productName = DevNetworking;
+		};
+		B7BEBCFB2C2096030004A4A5 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B7BEBCFA2C2096030004A4A5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

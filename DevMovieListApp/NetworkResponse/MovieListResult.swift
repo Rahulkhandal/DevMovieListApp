@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MovieResult: Decodable, Paginable {
+struct MovieResult: Codable, Paginable {
 
     let results: [Movie]
     let currentPage: Int

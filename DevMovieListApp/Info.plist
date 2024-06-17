@@ -6,6 +6,21 @@
 	<string>$(AUTHORIZATION_HEADER)</string>
 	<key>BASE_URL</key>
 	<string>${BASE_URL}</string>
+	<key>IMAGE_BASE_URL</key>
+	<string>${IMAGE_BASE_URL}</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>http://www.themoviedb.org</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<string></string>
+			</dict>
+		</dict>
+	</dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
