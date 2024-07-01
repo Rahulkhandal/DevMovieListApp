@@ -1,1 +1,3 @@
 # DevMovieListApp
+<br>
+MVVM Architecture
